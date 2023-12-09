@@ -22,12 +22,10 @@ for place in range(0, letters_amount):
 for place in range(0, numbers_amount):
     gen_password.append(str(random.randint(0, 9)))
 
-print(gen_password)
 random.shuffle(gen_password)
-print(gen_password)
 str_password = ""
 for i in range(0, len(gen_password)):
     str_password += gen_password[i]
-print(str_password)
+print("Your password is: " + str_password)
                                    
             
