@@ -8,13 +8,13 @@ def display():
     print(dash_print)
     
 def victory_checker():
-    if  "_" not in dash_list:
+    if "_" not in dash_list:
         print("You won!")
         exit(1)
         
 def choose_word():
     # Open the external file containing your list of words
-    with open('Hangman_word.py', 'r') as file:
+    with open('Hangman_words.txt', 'r') as file:
         words = file.readlines()
 
     # Choose a random word from the list
